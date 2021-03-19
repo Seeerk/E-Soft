@@ -1,0 +1,80 @@
+*:not input{
+		-webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	     -khtml-user-select: none;
+	       -moz-user-select: none;
+	        -ms-user-select: none;
+	            user-select: none;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: arial;
+	max-width: 100%;
+  min-height: 100vh;
+  color: #a9a9a9;
+}
+form{
+	text-align: center;
+	position: absolute;
+	top: 25vh;
+	left: 34vw;
+	width: 32vw;
+	height: 50vh;
+	padding: 2vw;
+	border-radius: 16px;
+	box-shadow:  5px 5px 32px #c2c2c2,
+             -5px -5px 32px #ffffff;
+}
+
+
+input{
+	padding: 16px;
+  border: none;
+  width: 90%;
+  outline: none;
+  font-size: 1.5em;
+  background: white;
+	box-shadow: inset 3px 3px 4px #e0e0e0,
+  	          inset -3px -3px 4px #ffffff;
+  border-radius: 15px;
+  margin: 15px auto;
+}
+input::placeholder {
+    font-size: 0.7em;
+}
+.submit{
+	box-shadow:  3px 3px 4px #e0e0e0,
+             	 -3px -3px 4px #ffffff;
+}
+.submit:active{
+	box-shadow: inset 3px 3px 4px #e0e0e0,
+  	          inset -3px -3px 4px #ffffff;
+}
+.submit:hover{
+	color: #a9a9a9;
+	cursor: pointer;
+}
+
+p{
+	font-size: 24pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media (max-width: 600px){
+	form{
+		left: 8vw;
+		width: 80vw;
+	}
+	input{
+		padding: 2vw;
+	}
+	input::placeholder {
+    font-size: 0.7em;
+	}
+	p{
+		font-size: 14pt;
+	}
+}
