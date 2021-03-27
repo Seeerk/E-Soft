@@ -1,0 +1,92 @@
+*:not .from-input{
+		-webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	     -khtml-user-select: none;
+	       -moz-user-select: none;
+	        -ms-user-select: none;
+	            user-select: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-content{
+	font-family: arial;
+  color: #a9a9a9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.form-signUp, .form-signIn{
+	text-align: center;
+	width: 28vw;
+	padding: 16px;
+	border-radius: 16px;
+	box-shadow:  5px 5px 32px #c2c2c2,
+             	-5px -5px 32px #ffffff;
+}
+
+.form-header{
+	font-size: 17pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+.form-input, .form-submit{
+  background: white;
+  width: 90%;
+  font-size: 14pt;
+	padding: 8px;
+  margin: 15px auto;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: inset 3px 3px 4px #e0e0e0,
+  	          inset -3px -3px 4px #ffffff;
+}
+
+.form-input::placeholder{
+  font-size: 10pt;
+}
+
+.form-submit{
+	font-weight: 600;
+  color: limegreen;
+	box-shadow:  3px 3px 4px #e0e0e0,
+             	 -3px -3px 4px #ffffff;
+}
+
+.form-submit:active{
+	box-shadow: inset 3px 3px 4px #e0e0e0,
+  	          inset -3px -3px 4px #ffffff;
+}
+
+.form-submit:hover{
+	color: #a9a9a9;
+	cursor: pointer;
+}
+
+@media (max-width: 600px){
+	.form-signUp, .form-signIn{
+		width: 80vw;
+	}
+
+	.form-input{
+		padding: 2vw;
+	}
+
+	.form-input::placeholder {
+    font-size: 0.7em;
+	}
+
+	.form-header{
+		font-size: 14pt;
+	}
+}
